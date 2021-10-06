@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "607927632524",
+    "firebase_url": "https://quang-e0ad0.firebaseio.com",
+    "project_id": "quang-e0ad0",
+    "storage_bucket": "quang-e0ad0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:607927632524:android:55ecfc8da9360ff37f71a9",
+        "android_client_info": {
+          "package_name": "com.example.storeproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "607927632524-mgpue06hlcca7jtbpm87nlim8oua71o4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_LCICvvE3BlFn6YF-Mh13dsCbdcw8g3k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "607927632524-mgpue06hlcca7jtbpm87nlim8oua71o4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

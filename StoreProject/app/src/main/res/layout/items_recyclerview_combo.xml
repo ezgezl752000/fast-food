@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/border"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <ImageView
+        android:scaleType="centerInside"
+        android:cropToPadding="true"
+        android:id="@+id/imgRyclerViewSpecialCombo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="100dp"
+        android:layout_height="match_parent">
+    </ImageView>
+
+    <LinearLayout
+        android:orientation="vertical"
+       app:layout_constraintLeft_toRightOf="@+id/imgRyclerViewSpecialCombo"
+        android:layout_width="300dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/tvRyclerViewSpecialFoodName"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:text="Food Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:text="Rating: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+            <TextView
+                android:layout_marginTop="3dp"
+                android:text="4.5"
+                android:textColor="@color/black"
+                android:id="@+id/tvRatingStarSpecialFood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/star_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ImageView>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:background="#F65959"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnRegisterBack"
+               android:layout_margin="10dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/back_arrow"
+                android:layout_width="25dp"
+                android:layout_height="25dp"></ImageButton>
+            <TextView
+                android:textStyle="bold"
+                android:layout_margin="13dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:text="Create an account"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+                <ImageView
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/person"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp">
+                </ImageView>
+
+                <EditText
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/etRegisterFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/Registername"
+                    android:padding="10dp"></EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+                <ImageView
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/email"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp">
+                </ImageView>
+
+                <EditText
+                    android:hint="@string/RegisterUser"
+                    android:padding="10dp"
+                    android:id="@+id/etRegisterUser"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+                <ImageView
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/phone"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp">
+                </ImageView>
+
+                <EditText
+                    android:hint="@string/RegisterPhone"
+                    android:padding="10dp"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/etRegisterPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+                <ImageView
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/lock"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp">
+                </ImageView>
+
+                <EditText
+                    android:hint="@string/RegisterPass"
+                    android:padding="10dp"
+                    android:id="@+id/etRigisterPass"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"></EditText>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+                <ImageView
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/lock"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp">
+                </ImageView>
+                <EditText
+                    android:hint="@string/ConfirmRegisterPass"
+                    android:padding="10dp"
+                    android:id="@+id/etRegisterConfirm"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></EditText>
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnCreateAccount"
+                android:layout_width="230dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="30dp"
+                android:background="@drawable/border_button"
+                android:text="Creat Account"
+                android:textColor="@color/white"
+                android:textStyle="bold"></androidx.appcompat.widget.AppCompatButton>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</layout>

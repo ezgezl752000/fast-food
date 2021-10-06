@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/draw_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:openDrawer="start"
+        >
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:headerLayout="@layout/header"
+            app:menu="@menu/activity_menu_profile"
+            android:layout_gravity= "start"
+            android:fitsSystemWindows="true"
+            >
+        </com.google.android.material.navigation.NavigationView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F1F1F1"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/header"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp">
+                        <androidx.appcompat.widget.Toolbar
+                            android:id="@+id/toolbar"
+                            android:layout_marginLeft="13dp"
+                            android:layout_alignParentLeft="true"
+                            android:background="@drawable/menu"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"></androidx.appcompat.widget.Toolbar>
+
+                        <ImageButton
+                            android:id="@+id/Cart"
+                            android:layout_marginRight="13dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/cart"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"></ImageButton>
+                    </RelativeLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:text="Hello Quang!"
+                        android:textColor="@color/black"
+                        android:textSize="17dp"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:text="Grab your"
+                        android:textColor="@color/black"
+                        android:textSize="24dp"></TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:text="delicious meal!!!"
+                        android:textColor="@color/black"
+                        android:textSize="33dp"
+                        android:textStyle="bold"></TextView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Favorite"
+                    android:textColor="@color/black"
+                    android:textSize="22dp"
+                    android:textStyle="bold"></TextView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/lvRecyclerViewCombo"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:layout_marginTop="12dp"></androidx.recyclerview.widget.RecyclerView>
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Food"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/lvRecyclerView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginTop="5dp"></androidx.recyclerview.widget.RecyclerView>
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Drink"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/lvRecyclerDrink"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="12dp"
+                    ></androidx.recyclerview.widget.RecyclerView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Special Combo"
+                    android:textColor="@color/black"
+                    android:textSize="22dp"
+                    android:textStyle="bold"></TextView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/lvRecyclerViewSpecialCombo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="12dp"
+                    ></androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</layout>

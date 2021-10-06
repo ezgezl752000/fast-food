@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">StoreProject</string>
+
+    ~~~~~~~~Login~~~~~~~~~~~
+
+    <string name="LoginUser">Email</string>
+    <string name="LoginPass">Password</string>
+
+
+    ~~~~~~~~Register~~~~~~~~~~~
+
+    <string name="Registername">Full Name</string>
+    <string name="RegisterUser">Email</string>
+    <string name="RegisterPhone">Phone</string>
+    <string name="RegisterPass">Password</string>
+    <string name="ConfirmRegisterPass">Confirm Password</string>
+
+    ~~~~~~~~Profile~~~~~~~~~~~
+
+    <string name="Profilename">Full Name</string>
+    <string name="ProfileUser">Email</string>
+    <string name="ProfilePhone">Phone</string>
+
+
+    ~~~~~~bottom navgation~~~~~~~~~
+    <string name="title_homepage">HomePage</string>
+    <string name="title_cart">Cart</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    ~~~~~~~~~~~~~~~~~~~
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+</resources>
